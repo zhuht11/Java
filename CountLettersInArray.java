@@ -1,7 +1,7 @@
-package hellojavac;
-
-public class hahaha {
-	
+package hello;
+import java.util.*;
+public class helloworld 
+{
 	public static void main(String[] args) 
 	{
 		char[] chars = creatArray();
@@ -17,7 +17,7 @@ public class hahaha {
 		char[] chars = new char[100];
 		for(int i = 0;i < chars.length;i++)
 		{
-			chars[i] = RandomCharacter.getRandomLowerCaseLetter();
+			chars[i] = getRandomLowerCaseLetter();
 		}
 		return chars;
 	}
@@ -58,8 +58,7 @@ public class hahaha {
 			}
 		}
 	}
-	
-	public static char getRandomCharacter()
+	public static char getRandomCharacter(char ch1,char ch2)
 	{
 		return (char)(ch1 + Math.random() * (ch2 - ch1 + 1));
 	}
@@ -68,4 +67,3 @@ public class hahaha {
 		return getRandomCharacter('a','z');
 	}
 }
-
